@@ -19,3 +19,4 @@ Ese fue el problema que quiso solucionar un grupo de bibliotecarios con interés
 
 En los últimos dos años, muchas grandes bibliotecas de investigación del mundo han comenzado a presentar sus imágenes digitalizadas usando ese marco. Sin embargo, pocas editoriales CTM han adoptado el estándar, aun cuando las imágenes, en forma de figuras, juegan un papel fundamental en la diseminación de la información académica.
 
+![](img/default.jpg)
