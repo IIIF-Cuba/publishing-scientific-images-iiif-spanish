@@ -11,3 +11,11 @@ Muchas grandes bibliotecas de investigación han adoptado IIIF para presentar su
 
 Blogpost de Robert Kiley, Jefe de Servicios Digitales, Biblioteca Wellcome [kiley@wellcome.ac.uk](mailto:r.kiley@wellcome.ac.uk), y Tom Crane, Director Técnico, Digirati [tom.crane@digirati.com](mailto:tom.crane@digirati.com).
 
+## El potencial de IIIF para las editoriales CTM
+
+Es ampliamente reconocido que una imagen vale mil palabras, y eso es especialmente cierto en la web. No obstante, combinar en un único objeto digital colecciones de imágenes mantenidas en sitios web distintos, y presentar las mismas mediante una aplicación rica en funcionalidad, es una tarea difícil.
+
+Ese fue el problema que quiso solucionar un grupo de bibliotecarios con interés especial en los manuscritos medievales. La meta era proporcionar a sus usuarios una sola herramienta para acceder a las imágenes digitalizadas, y que la experiencia de visualización incluyera funcionalidades como zoom profundo, búsqueda, y anotación. Todo eso llevó al desarrollo de IIIF.
+
+En los últimos dos años, muchas grandes bibliotecas de investigación del mundo han comenzado a presentar sus imágenes digitalizadas usando ese marco. Sin embargo, pocas editoriales CTM han adoptado el estándar, aun cuando las imágenes, en forma de figuras, juegan un papel fundamental en la diseminación de la información académica.
+
