@@ -10,3 +10,4 @@ Apoyado en el marco IIIF, el nuevo [Digital Library Cloud Service(DLCS)](https:/
 Muchas grandes bibliotecas de investigación han adoptado IIIF para presentar sus imágenes digitales, pero muchas editoriales CTM aún deben experimentar sus beneficios.
 
 Blogpost de Robert Kiley, Jefe de Servicios Digitales, Biblioteca Wellcome [mailto](mailto:r.kiley@wellcome.ac.uk), y Tom Crane, Director Técnico, Digirati [mailto](mailto:tom.crane@digirati.com).
+
