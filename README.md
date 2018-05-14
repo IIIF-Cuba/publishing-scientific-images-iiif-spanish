@@ -20,3 +20,15 @@ Ese fue el problema que quiso solucionar un grupo de bibliotecarios con interés
 En los últimos dos años, muchas grandes bibliotecas de investigación del mundo han comenzado a presentar sus imágenes digitalizadas usando ese marco. Sin embargo, pocas editoriales CTM han adoptado el estándar, aun cuando las imágenes, en forma de figuras, juegan un papel fundamental en la diseminación de la información académica.
 
 ![](img/default.jpg)
+
+**Figura 1.** Una colección IIIF de imágenes biomédicas de la Biblioteca Wellcome [https://alpha.wellcomelibrary.org/collections/biomed](https://alpha.wellcomelibrary.org/collections/biomed)
+
+Son varios los beneficios de IIIF para las editoriales CTM:
+
+- Permite presentar imágenes en plataformas propias en forma enriquecida y atractiva. Muchas editoriales ofrecen imágenes en tamaño completo en sus artículos online, pero muy pocas proporcionan al usuario la opción de ver la imagen en un cliente de zoom profundo. Eso puede resultar difícil para quienes se hayan habituado a la funcionalidad de zoom profundo.
+- Cuando las imágenes estén disponibles como endpoints IIIF, una editorial CTM podrá construir fácilmente una serie de aplicaciones web para combinar todas sus imágenes, y ofrecer un servicio de biblioteca de imágenes a los usuarios.
+- Los usos anteriores de IIIF serían útiles para editoriales individuales; pero se podrían construir aplicaciones mucho más enriquecidas si todas las editoriales presentaran sus imágenes de esa manera. Por ejemplo, la reciente emergencia de salud pública motivada por el virus Zika hizo que varias editoriales acordaran publicar gratuitamente las investigaciones que poseían sobre el tema. Si esas mismas editoriales presentaran las imágenes de esos documentos como endpoints IIIF, los investigadores tendrían un único objeto digital donde acceder a todas las imágenes relacionadas con el virus.
+- Finalmente, IIIF se está utilizando en proyectos de crowdsourcing de Patrimonio Cultural para transcripción, traducción, y etiquetado. Esas actividades son igualmente aplicables a material CTM.
+
+
+
