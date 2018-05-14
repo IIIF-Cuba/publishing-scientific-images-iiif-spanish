@@ -7,3 +7,6 @@ Para comunicar descubrimientos importantes, a veces las imágenes pueden ser tan
 
 Apoyado en el marco IIIF, el nuevo [Digital Library Cloud Service(DLCS)](https://dlcs.gitbooks.io/book/content/overview.html) del Fideicomiso Wellcome es una infraestructura basada en la nube que pretende ofrecer servicios rápidos, escalables, y de amplia disponibilidad para la presentación de imágenes en formas enriquecidas y atractivas.
 
+Muchas grandes bibliotecas de investigación han adoptado IIIF para presentar sus imágenes digitales, pero muchas editoriales CTM aún deben experimentar sus beneficios.
+
+Blogpost de Robert Kiley, Jefe de Servicios Digitales, Biblioteca Wellcome [r.kiley@wellcome.ac.uk](r.kiley@wellcome.ac.uk), y Tom Crane, Director Técnico, Digirati [tom.crane@digirati.com](tom.crane@digirati.com)
