@@ -91,10 +91,10 @@ El potencial de esta API es mejor ilustrado en los ejemplos de la Tabla 1. Note 
                                               <tr>
                                                 <td>Rotar una imagen</td>
                                                 <td>
-                                                  <p><a href="http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/full/,500/90/default.jpg">http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/full/,500/90/default.jpg</a>&nbsp;(ver
-
-                                                    Figura 2)</p>
+                                                  <p><a href="http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/full/,500/90/default.jpg">http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/full/,500/90/default.jpg</a>&nbsp;(verFigura 2)</p>
                                                 </td>
                                               </tr>
                                             </tbody>
                                           </table>
+										  
+										  
