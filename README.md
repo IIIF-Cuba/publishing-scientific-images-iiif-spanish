@@ -175,4 +175,19 @@ Los ejemplos de la Tabla 2 son una simple demostración de la API de Presentaci�
                                               </tr>
                                             </tbody>
                                           </table>									  
-										  
+
+**Servicios de autenticación y búsqueda**
+
+Además de proporcionar acceso a endpoints de imagen, IIIF soporta servicios de autenticación y búsqueda.
+
+**Autenticación**
+
+Sabiendo que no todas las imágenes se exponen con un modelo de acceso abierto, la infraestructura de IIIF permite describir y hacer cumplir controles de acceso a las imágenes.
+
+La API de Autenticación de IIIF es un patrón de interacción que un visor cliente puede implementar para que el usuario pueda ganar acceso a las imágenes. Esto es esencial pues distintas instituciones tienen diferentes mecanismos de autenticación y autorización, y IIIF debe trabajar con todos. Esta API admite varios usos, desde la simple opción click-through (si el servidor no necesita establecer la identidad del usuario), hasta la autenticación completa delegada, que pasa las peticiones de acceso a la aplicación de autenticación de la organización que aloja las imágenes.
+
+Se puede construir un manifest IIIF que referencie imágenes de endpoints distintos, que tengan políticas diferentes para gestionar la autenticación. Por ejemplo, asuma que se construyó un manifest IIIF que muestra todas las imágenes relacionadas con la malaria, publicadas por Science, Nature y eLife. Sería posible ver de inmediato las imágenes de eLife ya que son de acceso abierto pero, cuando el usuario navegue a una imagen alojada por Nature o Science, se le pedirá autenticación en esas publicaciones, pues sus imágenes no son de acceso abierto. Si la autenticación fuera denegada, esas imágenes no estarían disponibles. La API de Autenticación de IIIF describe como el visor cliente controla la experiencia de usuario a través de ese flujo.
+
+La Tabla 3 muestra ejemplos de controles de acceso implementados por la Biblioteca Wellcome para su contenido. 
+
+
