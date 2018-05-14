@@ -54,4 +54,47 @@ Con esa sintaxis, un usuario podría, por ejemplo, construir una página web que
 
 El potencial de esta API es mejor ilustrado en los ejemplos de la Tabla 1. Note que es suficiente editar la URL para generar distintas respuestas del servidor IIIF:
 
+<table style="width:500px" cellspacing="1" cellpadding="1" border="1">
+                                            <tbody>
+                                              <tr>
+                                                <td>Tarea</td>
+                                                <td>URL y Comentarios</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Ver una
+                                                  imagen IIIF</td>
+                                                <td>
+                                                  <p><a href="http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/full/full/0/default.jpg">http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/full/full/0/default.jpg</a></p>
+                                                  <p>Esta es la petición
+                                                    predeterminada –
+                                                    mostrar la imagen en
+                                                    tamaño completo, sin
+                                                    rotación, como
+                                                    archivo jpg.</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>Solicitar otro
+                                                    tamaño de imagen<br>
+                                                  </p>
+                                                </td>
+                                                <td>
+                                                  <p><a href="http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/full/500,500/0/default.jpg">http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/full/500,500/0/default.jpg</a></p>
+                                                  <p>En este ejemplo,
+                                                    pedimos que la
+                                                    imagen se presente
+                                                    con un tamaño de
+                                                    500x500 píxeles.</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>Rotar una imagen</td>
+                                                <td>
+                                                  <p><a href="http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/full/,500/90/default.jpg">http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/full/,500/90/default.jpg</a>&nbsp;(ver
 
+                                                    Figura 2)</p>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
