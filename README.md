@@ -97,4 +97,82 @@ El potencial de esta API es mejor ilustrado en los ejemplos de la Tabla 1. Note 
                                             </tbody>
                                           </table>
 										  
+**Tabla 1.** API de Imagen de IIIF: ejemplos
+
+**¿Cómo sabemos que una imagen admite esas manipulaciones?**
+
+Para determinar los servicios IIIF soportados por una imagen IIIF, mire el recurso info.json. En el ejemplo anterior, para pedir el archivo JSON en lugar de la imagen, use: http://wellcomelibrary.org/iiif-img/b20432033-0/d7b80202-a1d7-4f88-ab57-0f6b369fe41b/info.json
+
+Verá que acepta la rotación, pero a pasos de 90 grados ("rotationBy90s").
+
+## API de Presentación de IIIF
+
+En palabras de IIIF, la API de Presentación “especifica un servicio web que retorna documentos estructurados JSON-LD los cuales, en conjunto, describen la estructura y layout de un objeto digitalizado.” Expresado más sencillamente, la API de Presentación proporciona suficientes metadatos para impulsar la aplicación de visualización. En el mundo IIIF, esos documentos estructurados se llaman manifests.
+
+![](img/fig3_iiif_presentation_api.JPG)
+
+**Figura 3.** Usando Universal Viewer para ver una imagen IIIF
+
+Los ejemplos de la Tabla 2 son una simple demostración de la API de Presentación de IIIF.  Los detalles se encuentran en: http://iiif.io/api/presentation/2.1/
+
+<table style="width:500px" cellspacing="1" cellpadding="1" border="1">
+                                            <tbody>
+                                              <tr>
+                                                <td>Tarea</td>
+                                                <td>URL y Comentarios</td>
+                                              </tr>
+                                              <tr>
+                                                <td>Visualizar un
+                                                  manifest IIIF</td>
+                                                <td>
+                                                  <p><a href="http://wellcomelibrary.org/iiif/b20432033/manifest">http://wellcomelibrary.org/iiif/b20432033/manifest</a></p>
+                                                  <p>Esto muestra el
+                                                    manifest de la
+                                                    imagen del embrión
+                                                    de pez cebra vista
+                                                    mediante la API de
+                                                    Imagen (arriba).</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>Abrir un manifest en
+                                                  Universal Viewer</td>
+                                                <td>
+                                                  <p><a href="http://wellcomelibrary.org/item/b20432033">http://wellcomelibrary.org/item/b20432033</a></p>
+                                                  <p>La Biblioteca
+                                                    Wellcome implementó
+                                                    Universal Viewer
+                                                    (UV) (<a href="https://github.com/UniversalViewer/universalviewer">https://github.com/UniversalViewer/universalviewer</a>)
+                                                    como su visor
+                                                    IIIF.&nbsp; Para ver
+                                                    este objeto, abra la
+                                                    siguiente URL:
+                                                    [Inserte URL aquí]</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>Visualizar en otro
+                                                    visor IIIF<br>
+                                                  </p>
+                                                </td>
+                                                <td>
+                                                  <p>Otra fortaleza de
+                                                    IIIF es que admite
+                                                    cualquier visor
+                                                    compatible con IIIF
+                                                    para renderizar las
+                                                    imágenes.</p>
+                                                  <p>Aquí vemos la
+                                                    imagen del pez cebra
+                                                    en el visor IIIF
+                                                    Mirador,
+                                                    desarrollado por
+                                                    Stanford.</p>
+                                                  <p><a href="http://projectmirador.org/demo/">http://projectmirador.org/demo/</a></p>
+                                                  <p>Clic en "Add new object from URL" - y pegar <a href="http://wellcomelibrary.org/iiif/b20432033/manifest">http://wellcomelibrary.org/iiif/b20432033/manifest</a></p>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>									  
 										  
