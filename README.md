@@ -30,5 +30,28 @@ Son varios los beneficios de IIIF para las editoriales CTM:
 - Los usos anteriores de IIIF serían útiles para editoriales individuales; pero se podrían construir aplicaciones mucho más enriquecidas si todas las editoriales presentaran sus imágenes de esa manera. Por ejemplo, la reciente emergencia de salud pública motivada por el virus Zika hizo que varias editoriales acordaran publicar gratuitamente las investigaciones que poseían sobre el tema. Si esas mismas editoriales presentaran las imágenes de esos documentos como endpoints IIIF, los investigadores tendrían un único objeto digital donde acceder a todas las imágenes relacionadas con el virus.
 - Finalmente, IIIF se está utilizando en proyectos de crowdsourcing de Patrimonio Cultural para transcripción, traducción, y etiquetado. Esas actividades son igualmente aplicables a material CTM.
 
+## El DLCS de la Biblioteca Wellcome
+
+La [Biblioteca Wellcome](http://wellcomelibrary.org/) está desarrollando una infraestructura basada en la nube, compatible con IIIF, con el fin de ofrecer servicios de amplia disponibilidad para presentar sus imágenes digitales, proporcionar búsqueda de texto completo y servicios de autenticación y, con el tiempo, funcionalidad de anotación.
+
+Desarrollar servicios para ofrecer endpoints IIIF es una tarea difícil que requiere el dominio e implantación de tecnología de servidor de imagen por parte de la institución/editorial. Por tanto, estamos explorando como proporcionar esos servicios en forma de servicio totalmente gestionado, a través de un proyecto piloto en el cual unas 40 instituciones pueden emplear nuestra infraestructura DLCS para generar endpoints IIIF de todas las imágenes que presentan mediante esa plataforma. Más detalles en: [https://dlcs.gitbooks.io/book/content/index.html](https://dlcs.gitbooks.io/book/content/index.html). Si alguna editorial desea probar este servicio, lean las Preguntas Frecuentes de DLCS y contacten a Robert Kiley.
+
+## ¿Qué es IIIF?
+
+IIIF soporta dos APIs, una de Imagen y una de Presentación, y dos APIs relacionadas, autenticación y búsqueda.
+
+## API de Imagen de IIIF
+
+El objetivo de la API de Imagen es permitir al usuario (humano o computadora) solicitar una imagen con un endpoint IIIF de diversas maneras, modificando tamaño, región, rotación, y formato según se requiera.
+
+![](img/fig2_iiif_image_api.JPG)
+
+**Figura 2.** Una imagen vista mediante la API de Imagen de IIIF
+
+Todos los detalles de la API de Imagen se encuentran en [http://iiif.io/api/image/2.0/](http://iiif.io/api/image/2.0/). En esencia, cada petición usa la sintaxis siguiente: {esquema}://{servidor}{/prefijo}/{identificador}/{región}/{tamaño}/{rotación}/{calidad}.{formato}.Por ejemplo: www.example.org/image-service/abcd1234/full/max/0/default.jpg
+
+Con esa sintaxis, un usuario podría, por ejemplo, construir una página web que presente una imagen en, digamos, 300x300 píxeles, mientras otro usuario utiliza la misma imagen, pero la muestra con tamaño y rotación diferentes, y centrada en una región específica. En todos los casos, el servidor de imagen IIIF posee una imagen máster, y presenta las imágenes al cliente como sean solicitadas. 
+
+El potencial de esta API es mejor ilustrado en los ejemplos de la Tabla 1. Note que es suficiente editar la URL para generar distintas respuestas del servidor IIIF:
 
 
