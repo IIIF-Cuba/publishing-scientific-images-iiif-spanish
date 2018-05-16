@@ -190,4 +190,136 @@ Se puede construir un manifest IIIF que referencie imágenes de endpoints distin
 
 La Tabla 3 muestra ejemplos de controles de acceso implementados por la Biblioteca Wellcome para su contenido. 
 
+<table style="width:500px" cellspacing="1" cellpadding="1" border="1">
+                                            <tbody>
+                                              <tr>
+                                                <td>Tarea</td>
+                                                <td>
+                                                  <p>URL y Comentarios</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>Licencia
+                                                    click-through</p>
+                                                </td>
+                                                <td>
+                                                  <p><a href="http://wellcomelibrary.org/item/b18170183">http://wellcomelibrary.org/item/b18170183</a></p>
+                                                  <div>
+                                                    <p>Como el archivo
+                                                      podría contener
+                                                      datos personales,
+                                                      pedimos que el
+                                                      usuario se
+                                                      comprometa a no
+                                                      usar
+                                                      inapropiadamente
+                                                      esos datos.</p>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>Autenticación
+                                                    delegada</p>
+                                                </td>
+                                                <td>
+                                                  <p><a href="http://wellcomelibrary.org/item/b16728701">http://wellcomelibrary.org/item/b16728701</a></p>
+                                                  <div>
+                                                    <p>La Biblioteca
+                                                      Wellcome contiene
+                                                      algunas imágenes
+                                                      clínicas a las que
+                                                      sólo pueden
+                                                      acceder los
+                                                      profesionales de
+                                                      la salud. Al
+                                                      intentar ver esta
+                                                      imagen, será
+                                                      redireccionado al
+                                                      servidor CAS de la
+                                                      Biblioteca
+                                                      Wellcome.</p>
+                                                  </div>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+
+**Tabla 3.** API de Autenticación de IIIF: ejemplos
+
+**Búsqueda**
+
+IIIF también ofrece una API de Búsqueda que retorna anotaciones disponibles en los recursos buscados. Esas anotaciones pueden ser transcripciones, comentarios, etiquetas, e identificaciones, entre otras.
+
+Un uso significativo de esto es buscar en una obra que tenga imágenes con texto buscable. Los resultados textuales se pueden retornar como anotaciones para que los visores pueden resaltar los términos. La búsqueda también se puede emplear para:
+
+- Encontrar todos los comentarios hechos por una persona particular.
+- Encontrar todas las etiquetas en una colección particular.
+- Encontrar todos los resaltados que contengan la palabra “cólera” en anotaciones de los reportes del Medical Officer of Health de la Biblioteca Wellcome.
+
+La Tabla 4 tiene algunos ejemplos de como funciona esta API. Note que los parámetros adicionales usados después del primer ejemplo no son soportados actualmente por el servicio de ejemplo.
+
+<table style="width:500px" cellspacing="1" cellpadding="1" border="1">
+                                            <tbody>
+                                              <tr>
+                                                <td>Tarea</td>
+                                                <td>
+                                                  <p>URL y Comentarios</p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>Encontrar el
+                                                    término x en un
+                                                    documento específico</p>
+                                                </td>
+                                                <td>
+                                                  <p><a href="http://wellcomelibrary.org/annoservices/search/b19956435?q=london">http://wellcomelibrary.org/annoservices/search/b19956435?q=london</a></p>
+                                                  <p>Las anotaciones
+                                                    retornadas incluyen
+                                                    información
+                                                    contextual, y
+                                                    suficiente
+                                                    información de
+                                                    ubicación para que
+                                                    un visor renderice
+                                                    resaltados:</p>
+                                                  <p><a href="http://wellcomelibrary.org/item/b19956435#?cv=24&amp;h=london">http://wellcomelibrary.org/item/b19956435#?cv=24&amp;h=london</a></p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>Encontrar término en
+                                                  las anotaciones de un
+                                                  usuario particular</td>
+                                                <td>
+                                                  <p><a href="http://wellcomelibrary.org/annoservices/search/b19956435?q=london&amp;user=wellcome:87678">http://wellcomelibrary.org/annoservices/search/b19956435?q=london&amp;user=wellcome:87678</a></p>
+                                                </td>
+                                              </tr>
+                                              <tr>
+                                                <td>
+                                                  <p>Encontrar las
+                                                    identificaciones de
+                                                    personas del usuario
+                                                    X en una región
+                                                    particular de una
+                                                    fotografía, entre
+                                                    dos fechas</p>
+                                                </td>
+                                                <td>
+                                                  <p><a href="http://wellcomelibrary.org/annoservices/search/canvas-123454321?motivation=identifying&amp;user=wellcome:87678&amp;box=200,200,1000,1000&amp;date=2016-01-01/2016-02-01">http://wellcomelibrary.org/annoservices/search/canvas-123454321?motivation=identifying&amp;user=wellcome:87678&amp;box=200,200,1000,1000&amp;date=2016-01-01/2016-02-01</a></p>
+                                                </td>
+                                              </tr>
+                                            </tbody>
+                                          </table>
+										  
+**Tabla 4.** API de Búsqueda de IIIF: ejemplos
+
+El servicio de búsqueda está acompañado por un servicio de autocompletamiento, útil para ofrecer completamientos de términos o etiquetas. Ambos servicios son descritos en la API de Búsqueda de IIIF en http://iiif.io/api/search/1.0/
+
+**Conclusión**
+
+Con la flexibilidad y riqueza de las APIs de IIIF, es sorprendente que muchas editoriales CTM no se hayan apresurado a adoptar el nuevo estándar para publicar imágenes en la web. Es posible que desconozcan su existencia, o sientan que IIIF sólo es relevante para artículos de acceso abierto, y no sepan a ciencia cierta como aplicarlo a sus necesidades.
+
+La ambición de IIIF es hacer posible un acceso más enriquecido a las imágenes del mundo. Con suerte, más editoriales CTM se animarán a presentar de ese modo sus materiales basados en imágenes.
 
